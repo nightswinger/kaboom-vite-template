@@ -1,3 +1,7 @@
-import kaboom from 'kaboom'
+import k from './kaboom'
+import HelloWorld from './scenes/HelloWorld'
 
-kaboom()
+const { go, scene } = k
+
+scene('game', HelloWorld)
+go('game')
